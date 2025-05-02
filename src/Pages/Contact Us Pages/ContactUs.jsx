@@ -59,6 +59,16 @@ function ContactUs() {
           </div>
           </div>
         </div>
+        {/* Embedded Map */}
+        <div className="max-w-5xl mx-auto mb-4">
+              <iframe
+                title="Our Location"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.0015956075876!2d-77.03687028464859!3d38.89767627957081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9c7d6f3f52d6c9f1!2sWhite%20House!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus"
+                className="w-full h-80 border-0"
+                allowFullScreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
 
         {/* Contact Form */}
         <div className="max-w-3xl mx-auto">
@@ -98,16 +108,7 @@ function ContactUs() {
               placeholder="Message"
               className="w-full px-4 py-3 border border-gray-300 focus:outline-none focus:border-[#7A40F2] h-32"
             ></textarea>
-            {/* Embedded Map */}
-            <div className="max-w-5xl mx-auto mt-16">
-              <iframe
-                title="Our Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.0015956075876!2d-77.03687028464859!3d38.89767627957081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9c7d6f3f52d6c9f1!2sWhite%20House!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus"
-                className="w-full h-80 border-0"
-                allowFullScreen=""
-                loading="lazy"
-              ></iframe>
-            </div>
+            
             <button
               type="submit"
               className="w-full py-3 bg-[#FFD050] text-[#232536] font-semibold hover:bg-[#e6c044] transition mb-5"

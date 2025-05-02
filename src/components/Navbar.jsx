@@ -14,6 +14,7 @@ function Navbar() {
         {"HR"}<span className="text-[#FFD050]">{" Cloud"}</span>
       </div>
 
+
       {/* Desktop Menu */}
       <div className="hidden md:flex items-center space-x-8 text-gray-300 mr-4">
         <NavLink to="/" className={({ isActive }) => isActive ? "text-white font-bold" : "hover:text-white"}>Home</NavLink>
@@ -41,6 +42,7 @@ function Navbar() {
             </button>
           </div>
 
+          
           {/* Menu Items */}
           <div className="flex flex-col px-6 space-y-6 text-white">
             <NavLink to="/" onClick={toggleMobileMenu} className="hover:text-[#FFD050]">Home</NavLink>
@@ -48,15 +50,18 @@ function Navbar() {
             <NavLink to="/aboutUs" onClick={toggleMobileMenu} className="hover:text-[#FFD050]">About Us</NavLink>
             <NavLink to="/contactUs" onClick={toggleMobileMenu} className="hover:text-[#FFD050]">Contact Us</NavLink>
 
-            <button className="mt-4 bg-white text-[#232536] font-semibold px-4 py-2 hover:bg-[#FFD050]">
+            
+
+          </div>
+        </div>
+        
+      </div>
+      <button className="ml-3 mr-3 bg-white text-[#232536] font-semibold px-4 py-2 hover:bg-[#FFD050]">
               Sign up
             </button>
             <button className="bg-[#FFD050] text-[#232536] font-semibold px-4 py-2 hover:bg-[#492491] hover:text-white">
               Login
             </button>
-          </div>
-        </div>
-      </div>
     </nav>
   );
 }
